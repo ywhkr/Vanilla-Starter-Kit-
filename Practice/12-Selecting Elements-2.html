@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <li>List1</li>
+        <li>List2</li>
+        <li>List3</li>
+      </ul>
+      <p>Paragraph1</p>
+      <p>Paragraph2</p>
+    </div>
+
+    <script>
+      /*
+
+  /*
+
+  < Selecting Elements basic 2 >
+
+  💬 를 적절한 값으로 고쳐주세요!
+
+*/
+
+      const $li = document.getElementsByTagName('li');
+      const $p = document.getElementsByTagName('p');
+
+      const text1 = $li[2].textContent;
+      const text2 = $p[1].textContent;
+
+      const result = text1 + text2;
+
+      if (result === 'List3Paragraph2') {
+        alert('🎉');
+      }
+    </script>
+  </body>
+</html>
