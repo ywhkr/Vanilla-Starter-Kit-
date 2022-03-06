@@ -1,0 +1,117 @@
+<div>
+  <p></p>
+</div>
+
+<script>
+  /*
+
+  < Manipulating Elements basic 1 >
+  
+  화면에 "I am a paragraph"라는 텍스트가 나타날 수 있도록
+  
+  <p> 태그에 텍스트를 추가해주세요!
+  
+  🚨 HTML, CSS는 건드리지 않고 JS만 수정해주세요.
+
+*/
+
+  const pElement = document.querySelector('p');
+  pElement.textContent = 'I am a paragraph';
+</script>
+
+<!-- QUIZ 2 -->
+
+<div>
+  <p class="item">paragraph1</p>
+  <p class="green">paragraph2</p>
+</div>
+
+<script>
+  /*
+
+  < Manipulating Elements basic 2 >
+  
+  "paragraph1"을 아래 "paragraph2"와 동일한 단어가 되도록
+  
+  폰트 사이즈는 100px, 색상은 #55ff00로 수정해주세요!
+  
+  🚨 HTML, CSS는 건드리지 않고 JS만 수정해주세요.
+
+*/
+
+  const itemElement = document.querySelector('.item');
+
+  itemElement.style.fontSize = `100px`;
+  itemElement.style.color = `#55ff00`;
+</script>
+
+<!-- quiz 3  -->
+
+<div class="container">
+  <div class="left"></div>
+  <div class="right"></div>
+</div>
+
+<script>
+  /*
+
+  < Manipulating Elements basic 3 >
+  
+  오른쪽 요소가 왼쪽 요소와 같이 "yellow" 색상을 가질 수 있도록
+  
+  배경색을 수정해주세요!
+  
+  🚨 HTML, CSS는 건드리지 않고 JS만 수정해주세요.
+
+*/
+
+  const rightElement = document.querySelector('.right');
+
+  rightElement.style.backgroundColor = 'yellow';
+</script>
+
+<!--  quiz 4  -->
+
+<div class="container">
+  <div class="lightWrapper">
+    <span class="light"></span>
+    <span class="light"></span>
+    <span class="light"></span>
+  </div>
+  <div class="lightWrapper">
+    <span class="light red">Stop</span>
+    <span class="light orange">Pause</span>
+    <span class="light green">Go</span>
+  </div>
+</div>
+
+<script>
+  /*
+
+  < Traffic Lights >
+  
+  왼쪽 신호등을 오른쪽 신호등과 같이
+  
+  Stop, Pause, Go라는 텍스트를 추가해주시고
+  
+  red, orange, green 클래스를 추가하여
+  
+  빨간색, 주황색, 초록색 배경색을 가질 수 있도록 수정해주세요!
+  
+  🚨 HTML, CSS는 건드리지 않고 JS만 수정해주세요.
+  
+*/
+
+  const wrapperElement = document.querySelector('.lightWrapper');
+  const redLightElement = wrapperElement.children[0];
+  const orangeLightElement = wrapperElement.children[1];
+  const greenLightElement = wrapperElement.children[2];
+
+  redLightElement.textContent = 'Stop';
+  orangeLightElement.textContent = 'Pause';
+  greenLightElement.textContent = 'Go';
+
+  redLightElement.classList.add('red');
+  orangeLightElement.classList.add('orange');
+  greenLightElement.classList.add('green');
+</script>
