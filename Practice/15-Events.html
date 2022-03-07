@@ -1,0 +1,110 @@
+<div class="container">
+  <button class="button1">Button1</button>
+  <button class="button2">Button2</button>
+</div>
+
+<script>
+  /*
+
+  < Events basic 1 >
+
+  Button1을 눌럿을 때, Button2와 같이 "🎉"메세지와 함께
+  
+  알림창이 나나탈 수 있도록 button1Element에 이벤트를 등록시켜 주세요!
+
+  🚨 HTML, CSS는 건드리지 않고 JS만 수정해주세요.
+
+*/
+
+  const button1Element = document.querySelector('.button1');
+
+  button1Element.addEventListener('click', function () {
+    alert('🎉');
+  });
+
+  // 버튼2 이벤트 등록을 위한 코드 입니다.
+  // 참고하지 말고 직접 작성해 보세요!
+
+  const button2Element = document.querySelector('.button2');
+
+  button2Element.addEventListener('click', function () {
+    alert('🎉');
+  });
+</script>
+
+<!-- quiz 2 -->
+<div class="container">
+  <p>I am a paragraph</p>
+  <button>Change Color</button>
+</div>
+
+<script>
+  /*
+
+  버튼을 눌렀을 때 <p> 태그의 폰트를 본인이 원하는 색상이 되도록
+  
+  이벤트를 등록시켜 주세요!
+
+  🚨 HTML, CSS는 수정하지 않고 JS만 수정해주세요.
+
+*/
+
+  const buttonElement = document.querySelector('button');
+
+  buttonElement.addEventListener('click', function () {
+    document.querySelector('p').style.color = 'tomato';
+  });
+</script>
+
+<!-- quiz 3 -->
+
+<div class="container">
+  <div class="lightWrapper">
+    <span class="lightOn red">Stop</span>
+    <span class="lightOn orange">Pause</span>
+    <span class="lightOn green">Go</span>
+  </div>
+  <button>전체 불 끄기 💡</button>
+</div>
+
+<script>
+  /*
+
+  <script 신호등 불 켜기 >
+
+  다음과 같은 조건을 만족하여 신호등의 불이 켜질수 있도록 만들어 주세요!
+  
+  📌 Stop, Pause, Go 클릭 시 빨간색, 주황색, 초록색불이 들어와야 합니다.
+  📌 전체 불 끄기 버튼을 클릭하면 모든 불이 꺼져야 합니다.
+  
+  🚨 HTML, CSS는 건드리지 않고 JS만 수정해주세요.
+
+*/
+
+  const buttonElement = document.querySelector('button');
+
+  const stop = document.querySelector('.lightOn.red');
+  const pause = document.querySelector('.lightOn.orange');
+  const go = document.querySelector('.lightOn.green');
+
+  stop.addEventListener('click', function () {
+    stop.style.backgroundColor = 'red';
+  });
+
+  pause.addEventListener('click', function () {
+    pause.style.backgroundColor = 'orange';
+  });
+
+  go.addEventListener('click', function () {
+    go.style.backgroundColor = 'green';
+  });
+
+  buttonElement.addEventListener('click', function () {
+    const red = document.querySelectorAll('.lightOn')[0];
+    const orange = document.querySelectorAll('.lightOn')[1];
+    const green = document.querySelectorAll('.lightOn')[2];
+    red.style.backgroundColor = '#fff';
+    orange.style.backgroundColor = '#fff';
+    green.style.backgroundColor = '#fff';
+  });
+</script>
