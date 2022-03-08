@@ -1,0 +1,57 @@
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+</table>
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  th {
+    border: 1px solid black;
+    width: 90px;
+    height: 40px;
+  }
+</style>
+<script>
+  /*
+
+  다음과 같은 조건을 만족하는 주간 달력을 만들어 주세요!
+  
+  📌 일요일 부터 토요일까지 차례대로 보여져야 합니다.
+  📌 days 배열을 사용해야 합니다.
+ 
+  🚨 HTML, CSS는 수정하지 않고 JS만 수정해주세요.
+
+
+  +---------------------------------------------+
+  |  일   |  월  |  화  |  수  |  목  |  금  |  토  |
+  +---------------------------------------------+
+   
+*/
+
+  const days = ['일', '월', '화', '수', '목', '금', '토'];
+  const $th = document.querySelectorAll('th');
+
+  for (let i = 0; i < days.length; i++) {
+    $th[i].textContent = days[i];
+  }
+</script>
